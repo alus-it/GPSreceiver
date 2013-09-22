@@ -1,0 +1,37 @@
+GPSreceiver
+
+This is an example Java program that receives, parses and displays NMEA sentences received from a serial GPS receiver. The program has been tested with the Globalsat BU-303 GPS receiver with USB interface.
+
+
+More about NMEA protocol
+
+NMEA 0813 protocol is used to output all the received informations by the most GPS receiver units. One of the best places where to find free informations about how to parse the NMEA sentences is the website of gpsd project. They have a really handy and detailed guide regarding what is actually of free domain of the NMEA protocol.
+GPSreceiver output
+
+The program tries to represent live graphically some of the informations received from the GPS system.
+
+
+Installation
+
+Being this application written in Java, a Java virtual machine is obviously needed. This program uses the Javacomm library to read data from the GPS receiver. Unfortunately Javacomm isn't included by default in the Java virtual machine distribution so it needs to be installed apart.
+Installation of Javacomm under Linux
+
+    1. Download Javacomm for Linux
+    2. Extract libLinuxSerialParallel.so to /usr/lib
+    3. Extract javax.comm.properties to your <JDK>/jre/lib or your <JRE>/lib
+    4. Add comm.jar to your classpath (this can be skipped because comm.jar is already included in GPSreceiver)
+
+Installation of Javacomm under Windows
+
+    1. Make sure that the environment variable JAVA_HOME points to the root of your Java virtual machine installation
+    2. Download Javacomm for Windows
+    3. Extract win32com.dll to JAVA_HOME\bin
+    4. Extract javax.comm.properties to JAVA_HOME\lib
+    5. Extract comm.jar to JAVA_HOME\lib\ext (this can be skipped because comm.jar is already included in GPSreceiver)
+
+Once completed the installation of Javacomm you can run GPSreceiver typing: java -jar GPSreceiver.jar. Under Windows, if you wish to create a shortcut you should use the command javax instead of java in order to prevent to appear the DOS console window.
+
+For more information refer to the project web page: http://www.alus.it/airnavigator/gpsreceiver
+
+Alberto Realis-Luc
+info@alus.it
