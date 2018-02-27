@@ -4,11 +4,10 @@
 // Author         : Alberto Realis-Luc <alberto.realisluc@gmail.com>
 // Since          : July 2010
 // Web            : http://www.alus.it/airnavigator/gpsreceiver/
-// Git Repository : https://github.com/alus-it/GPSreceiver.git
+// Git repository : https://github.com/alus-it/GPSreceiver.git
 // Version        : 0.1
-// Copyright      : © 2010 Alberto Realis-Luc
+// Copyright      : © 2010-2018 Alberto Realis-Luc
 // License        : GPL
-// Last change    : 2 March 2011
 //============================================================================
 
 package it.alus.GPSreceiver.instruments;
@@ -82,7 +81,7 @@ public class Altimeter extends ChartPanel {
 		 hourScale.setTickRadius(0.88);
 		 hourScale.setTickLabelOffset(0.15);
 		 plot.addScale(0, hourScale);
-		 StandardDialScale minScale = new StandardDialScale(0,1000,90,-360,0,0);
+		 StandardDialScale minScale = new StandardDialScale(0,1000,90,-360,90,0);
 		 minScale.setVisible(false);
 		 minScale.setMajorTickIncrement(5.0);
 		 minScale.setTickRadius(0.68);

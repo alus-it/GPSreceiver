@@ -4,11 +4,10 @@
 // Author         : Alberto Realis-Luc <alberto.realisluc@gmail.com>
 // Since          : July 2010
 // Web            : http://www.alus.it/airnavigator/gpsreceiver/
-// Git Repository : https://github.com/alus-it/GPSreceiver.git
+// Git repository : https://github.com/alus-it/GPSreceiver.git
 // Version        : 0.1
-// Copyright      : © 2010 Alberto Realis-Luc
+// Copyright      : © 2010-2018 Alberto Realis-Luc
 // License        : GPL
-// Last change    : 2 March 2011
 //============================================================================
 /*
 === GSA - GPS DOP and active satellites ===

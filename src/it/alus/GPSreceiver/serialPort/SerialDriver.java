@@ -4,11 +4,10 @@
 // Author         : Alberto Realis-Luc <alberto.realisluc@gmail.com>
 // Since          : July 2010
 // Web            : http://www.alus.it/airnavigator/gpsreceiver/
-// Git Repository : https://github.com/alus-it/GPSreceiver.git
+// Git repository : https://github.com/alus-it/GPSreceiver.git
 // Version        : 0.1
-// Copyright      : © 2010 Alberto Realis-Luc
+// Copyright      : © 2010-2018 Alberto Realis-Luc
 // License        : GPL
-// Last change    : 2 March 2011
 //============================================================================
 /*
 == Physical protocol layer ==
@@ -46,12 +45,12 @@ import java.io.OutputStream;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.TooManyListenersException;
-import javax.comm.CommPortIdentifier;
-import javax.comm.PortInUseException;
-import javax.comm.SerialPort;
-import javax.comm.SerialPortEvent;
-import javax.comm.SerialPortEventListener;
-import javax.comm.UnsupportedCommOperationException;
+import gnu.io.CommPortIdentifier;
+import gnu.io.PortInUseException;
+import gnu.io.SerialPort;
+import gnu.io.SerialPortEvent;
+import gnu.io.SerialPortEventListener;
+import gnu.io.UnsupportedCommOperationException;
 
 public class SerialDriver extends Thread implements SerialPortEventListener {
 	private static InputStream inputStream;

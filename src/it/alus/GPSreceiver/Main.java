@@ -5,11 +5,10 @@
 // Author         : Alberto Realis-Luc <alberto.realisluc@gmail.com>
 // Since          : July 2010
 // Web            : http://www.alus.it/airnavigator/gpsreceiver/
-// Git Repository : https://github.com/alus-it/GPSreceiver.git
+// Git repository : https://github.com/alus-it/GPSreceiver.git
 // Version        : 0.1
-// Copyright      : © 2010 Alberto Realis-Luc
+// Copyright      : © 2010-2018 Alberto Realis-Luc
 // License        : GPL
-// Last change    : 2 March 2011
 //============================================================================
 
 package it.alus.GPSreceiver;
@@ -23,7 +22,7 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import javax.comm.CommPortIdentifier;
+import gnu.io.CommPortIdentifier;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
